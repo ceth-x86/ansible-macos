@@ -13,11 +13,14 @@ homebrew_installed_packages:
   - mas
   - nvim
   - packer
+  - pyenv
+  - pyenv-virtualenv
   - terraform
   - tmux
   - tree
   - tig
   - wget
+  - zlib
   - zsh
   - zsh-syntax-highlighting
 
@@ -40,6 +43,8 @@ homebrew_cask_apps:
   - insomnia
   - iterm2
   - jetbrains-toolbox
+  - karabiner-elements
+  - macfuse
   - obsidian
   - spotify
   - visual-studio-code
@@ -56,6 +61,8 @@ mas_installed_apps:
   - { name: "Things 3", id: 904280696 }
   - { name: "Day One", id: 1055511498 }
   - { name: "Fantastical", id: 975937182 }
+  - { name: "GoodLinks", id: 1474335294 }
+  - { name: "ForkLift", id: 412448059 }
 
 mas_email: ""
 mas_password: ""
