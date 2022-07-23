@@ -3,25 +3,34 @@ downloads: ~/.ansible-downloads/
 
 homebrew_installed_packages:
   - ansible
+  - asdf
   - autoconf
+  - awscli
   - ctags
   - curl
+  - fzf
   - git
   - go
   - htop
   - jq
+  - kubernetes-cli
+  - kubernetes-helm
   - mas
+  - npm
   - nvim
   - packer
   - pyenv
   - pyenv-virtualenv
+  - rust
   - terraform
   - tmux
   - tree
   - tig
   - wget
+  - yarn
   - zlib
   - zsh
+  - zsh-autosuggestions
   - zsh-syntax-highlighting
 
 homebrew_taps:
@@ -50,19 +59,18 @@ homebrew_cask_apps:
   - visual-studio-code
   - zoom
 
-# See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 1333542190, name: "1Password" }
+  - { name: "1Password", id: 1333542190 }
   - { name: "Amphetamine", id: 937984704 }
-  - { id: 747648890, name: "Telegram" }
-  - { name: "Magnet", id: 441258766 }
-  - { name: "Reeder", id: 1529448980 }
-  - { name: "The Unarchiver", id: 425424353 }
-  - { name: "Things 3", id: 904280696 }
   - { name: "Day One", id: 1055511498 }
   - { name: "Fantastical", id: 975937182 }
-  - { name: "GoodLinks", id: 1474335294 }
   - { name: "ForkLift", id: 412448059 }
+  - { name: "GoodLinks", id: 1474335294 }
+  - { name: "Magnet", id: 441258766 }
+  - { name: "Reeder", id: 1529448980 }
+  - { name: "Telegram", id: 747648890 }
+  - { name: "Things 3", id: 904280696 }
+  - { name: "The Unarchiver", id: 425424353 }
 
 mas_email: ""
 mas_password: ""
