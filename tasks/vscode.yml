@@ -1,0 +1,38 @@
+---
+
+- name: Create a default VSCode keuybinding configuration
+  template:
+    src: templates/vscode-keybindings.json.j2
+    dest: /Users/{{ lookup('env', 'USER') }}/Library/Application Support/Code/User/keybindings.json
+    owner: "{{ lookup('env', 'USER') }}"
+    force: yes
+
+- name: Install VSCode extensions
+  shell: code --install-extension {{ item }}
+  with_items:
+    - aaron-bond.better-comments
+    - visualstudioexptteam.vscodeintellicode # IntelliCode for JavaScript, Python, Java, and SQL.
+    - codezombiech.gitignore
+    - eamodio.gitlens
+    - timonwong.shellcheck
+    - hashicorp.terraform
+    
+    # Remote development
+    - ms-vscode-remote.remote-containers
+    - ms-vscode-remote.remote-ssh
+    - ms-vscode-remote.remote-ssh-edit
+
+    # Go
+    - golang.go
+
+    # C++
+    - austin.code-gnu-global
+    - jbenden.c-cpp-flylint
+
+    # Java
+    - redhat.java
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-pack
+    - vscjava.vscode-java-test
+    - vscjava.vscode-maven

@@ -19,7 +19,3 @@
 - PyCharm Professional
 - CLion
 - Goland
-
-# Install VSCode extensions
-
-- `./additions/vscode.sh`

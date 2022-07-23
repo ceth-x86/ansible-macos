@@ -1,4 +1,22 @@
 ---
+# Dock
+#
+
+- name: Automatically hide and show the Dock
+  shell: defaults write com.apple.dock autohide -bool true
+
+- name: Don’t show recent applications in Dock
+  shell: defaults write com.apple.dock show-recents -bool false
+
+# Finder
+#
+
+- name: "Finder: show all filename extensions"
+  command: defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+- name: "Finder: When performing a search, search the current folder by default"
+  command: defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" 
+
 - name: Avoid creating .DS_Store files on network or USB volumes
   shell: |
     defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -7,11 +25,8 @@
 - name: Disable the warning before emptying the Trash
   shell: defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-- name: Automatically hide and show the Dock
-  shell: defaults write com.apple.dock autohide -bool true
-
-- name: Don’t show recent applications in Dock
-  shell: defaults write com.apple.dock show-recents -bool false
+- name: "Don't Ask confirmation for change extension"
+  command: defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # iTerm
 #
