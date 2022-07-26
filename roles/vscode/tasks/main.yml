@@ -1,0 +1,19 @@
+---
+
+- name: Install VSCode
+  homebrew_cask:
+    name: visual-studio-code
+    options: force
+  become: no
+
+- name: Install Visual Studio Code extensions
+  command: code --install-extension {{ item }}
+  with_items: '{{ vscode_extensions }}'
+  ignore_errors: yes
+
+- name: Create a default VSCode keuybinding configuration
+  copy:
+    src: files/vscode-keybindings.json.j2
+    dest: /Users/{{ lookup('env', 'USER') }}/Library/Application Support/Code/User/keybindings.json
+    owner: "{{ lookup('env', 'USER') }}"
+    force: yes

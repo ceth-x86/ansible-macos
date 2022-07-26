@@ -1,0 +1,8 @@
+---
+- name: Install homebrew applications
+  environment:
+    PATH: /usr/local/bin:{{ ansible_env["PATH"] }}
+  homebrew:
+    name: '{{ apps }}'
+    state: latest
+  become: no

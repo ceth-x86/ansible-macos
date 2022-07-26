@@ -1,0 +1,17 @@
+---
+
+mas_installed_apps:
+  - { name: "1Password", id: 1333542190 }
+  - { name: "Amphetamine", id: 937984704 }
+  - { name: "Day One", id: 1055511498 }
+  - { name: "Fantastical", id: 975937182 }
+  - { name: "ForkLift", id: 412448059 }
+  - { name: "GoodLinks", id: 1474335294 }
+  - { name: "Magnet", id: 441258766 }
+  - { name: "Reeder", id: 1529448980 }
+  - { name: "Telegram", id: 747648890 }
+  - { name: "Things 3", id: 904280696 }
+  - { name: "The Unarchiver", id: 425424353 }
+
+mas_email: ""
+mas_password: ""

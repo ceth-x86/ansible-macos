@@ -1,0 +1,30 @@
+- git:
+        repo: https://github.com/asdf-vm/asdf.git
+        dest: "/Users/{{ lookup('env', 'USER') }}/.asdf"
+        version: v0.8.1
+
+    - name: "Create a default asdf configuration"
+      template:
+        src: templates/.asdfrc.j2
+        dest: /Users/{{ lookup('env', 'USER') }}/.asdfrc
+        owner: "{{ lookup('env', 'USER') }}"
+        force: yes
+
+    - name: "Install asdf plugins"
+      shell: |
+        source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+        asdf plugin-add {{ item }} || exit 0
+      with_items:
+        - ruby
+        - elixir
+        - nodejs
+        - python
+        - erlang
+
+    - name: "Install Default Python"
+      shell: |
+        source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+        asdf install python 3.10.0
+        asdf global python 3.10.0
+        pip3 install ansible
+        asdf reshim python
