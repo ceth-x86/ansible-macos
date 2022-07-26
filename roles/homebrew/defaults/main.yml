@@ -1,0 +1,33 @@
+---
+
+apps:
+  - ansible
+  - asdf
+  - autoconf
+  - awscli
+  - ctags
+  - curl
+  - fzf
+  - git
+  - go
+  - htop
+  - jq
+  - kubernetes-cli
+  - kubernetes-helm
+  - mas
+  - npm
+  - nvim
+  - packer
+  - pyenv
+  - pyenv-virtualenv
+  - rust
+  - terraform
+  - tmux
+  - tree
+  - tig
+  - wget
+  - yarn
+  - zlib
+  - zsh
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting

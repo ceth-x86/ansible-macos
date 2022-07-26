@@ -8,6 +8,8 @@
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
+    - role: homebrew
+    - role: homebrew_cask
     - role: gantsign.oh-my-zsh
       users:
         - username: ceth
@@ -21,10 +23,8 @@
               - tmux # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
               - vscode # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vscode
               - zsh-interactive-cd # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/zsh-interactive-cd
-
-  tasks:
-    - include: tasks/git.yml
-    - include: tasks/developer.yml
-    - include: tasks/vscode.yml
-    - include: tasks/yandex.yml 
-    - include: tasks/macos-defaults.yml  
+    - role: zsh
+    - role: git
+    - role: vscode
+    - role: yandex
+    - role: mac-osx

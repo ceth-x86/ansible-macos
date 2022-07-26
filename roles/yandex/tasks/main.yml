@@ -1,0 +1,13 @@
+---
+
+- name: Install yc
+  ansible.builtin.shell: curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
+
+- name: Install arc
+  ansible.builtin.shell: |
+    brew tap yandex/arc https://arc-vcs.yandex-team.ru/homebrew-tap
+    brew install arc-launcher
+    arc --update
+
+# brew services start arc-launcher
+# TODO: billing working environment

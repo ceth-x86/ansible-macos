@@ -1,0 +1,29 @@
+---
+
+vscode_extensions:
+  - aaron-bond.better-comments
+  - visualstudioexptteam.vscodeintellicode # IntelliCode for JavaScript, Python, Java, and SQL.
+  - codezombiech.gitignore
+  - eamodio.gitlens
+  - timonwong.shellcheck
+  - hashicorp.terraform
+    
+  # Remote development
+  - ms-vscode-remote.remote-containers
+  - ms-vscode-remote.remote-ssh
+  - ms-vscode-remote.remote-ssh-edit
+
+  # Go
+  - golang.go
+
+  # C++
+  - austin.code-gnu-global
+  - jbenden.c-cpp-flylint
+
+  # Java
+  - redhat.java
+  - vscjava.vscode-java-debug
+  - vscjava.vscode-java-dependency
+  - vscjava.vscode-java-pack
+  - vscjava.vscode-java-test
+  - vscjava.vscode-maven

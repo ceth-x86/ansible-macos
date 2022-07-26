@@ -1,0 +1,20 @@
+---
+
+homebrew_cask_appdir: /Applications
+apps:
+  - alfred
+  - appcleaner
+  - bartender
+  - cleanshot
+  - fork
+  - firefox
+  - font-jetbrains-mono
+  - iina
+  - insomnia
+  - iterm2
+  - jetbrains-toolbox
+  - karabiner-elements
+  - macfuse
+  - obsidian
+  - spotify
+  - zoom
