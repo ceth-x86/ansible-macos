@@ -6,6 +6,7 @@ apps:
   - appcleaner
   - bartender
   - cleanshot
+  - dash
   - fork
   - firefox
   - font-jetbrains-mono
@@ -17,4 +18,6 @@ apps:
   - macfuse
   - obsidian
   - spotify
+  - tidal
+  - transmission
   - zoom

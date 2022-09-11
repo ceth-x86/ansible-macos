@@ -27,6 +27,7 @@ apps:
   - tig
   - wget
   - yarn
+  - zellij
   - zlib
   - zsh
   - zsh-autosuggestions
